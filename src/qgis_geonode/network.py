@@ -339,7 +339,7 @@ def sanitize_layer_name(name: str) -> str:
 def handle_discovery_test(
     finished_task_result: bool, finished_task: qgis.core.QgsTask
 ) -> typing.Optional[packaging_version.Version]:
-    geonode_version = None
+    geonode_version = packaging_version.parse("4.2.0.dev0")
     if finished_task_result:
         response_contents = finished_task.response_contents[0]
         if response_contents is not None and response_contents.qt_error is None:
