@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<plugins>
+<pyqgis_plugin name="QGIS GeoNode - Automining" version="1.0.4">
+                <description><![CDATA[A QGIS plugin for integrating with modern GeoNode]]></description>
+                <about><![CDATA[This plugin adds GeoNode client functionality to QGIS - search, load and manage GeoNode resources from inside QGIS.
+
+Initial development has been commissioned by the by the Pacific Community (SPC), with funcding from the World Bank, and implemented by the Kartoza and GeoSolutions teams. The plugin is actively maintained and aims to keep up to date with changes in the GeoNode API.
+
+Check the website for a user guide and more detail.]]></about>
+                <version>1.0.4</version>
+                <qgis_minimum_version>3.18</qgis_minimum_version>
+                <homepage><![CDATA[https://automining-br.github.io/QGISGeoNodePlugin]]></homepage>
+                <file_name>qgis_geonode.1.0.4.zip</file_name>
+                <icon>plugin-logo.png</icon>
+                <author_name><![CDATA[Kartoza]]></author_name>
+                <download_url>https://github.com/automining-br/QGISGeoNodePlugin/releases/download/v1.0.4/qgis_geonode.1.0.4.zip</download_url>
+                <update_date>2024-06-13 05:32:16</update_date>
+                <experimental>False</experimental>
+                <deprecated>False</deprecated>
+                <tracker><![CDATA[https://github.com/automining-br/QGISGeoNodePlugin/issues]]></tracker>
+                <repository><![CDATA[https://github.com/automining-br/QGISGeoNodePlugin]]></repository>
+                <tags><![CDATA[geonode, wms, wfs, wcs]]></tags>
+                <server>False</server>
+            </pyqgis_plugin>
+</plugins>
