@@ -35,14 +35,14 @@ exclude = """\
 """
 
 [tool.qgis-plugin.metadata]
-name = "QGIS GeoNode"
+name = "QGIS GeoNode - Automining"
 qgisMinimumVersion = "3.18"
 icon = "plugin-logo.png"
 experimental = "False"
 deprecated = "False"
-homepage = "https://geonode.org/QGISGeoNodePlugin"
-tracker = "https://github.com/GeoNode/QGISGeoNodePlugin/issues"
-repository = "https://github.com/GeoNode/QGISGeoNodePlugin"
+homepage = "https://automining-br.github.io/QGISGeoNodePlugin"
+tracker = "https://github.com/automining-br/QGISGeoNodePlugin/issues"
+repository = "https://github.com/automining-br/QGISGeoNodePlugin"
 tags = [
     "geonode",
     "wms",
