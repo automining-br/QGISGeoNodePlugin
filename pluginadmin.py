@@ -376,7 +376,7 @@ def _get_existing_releases(
 ) -> typing.List[GithubRelease]:
     """Query the github API and retrieve existing releases"""
     # TODO: add support for pagination
-    base_url = "https://api.github.com/repos/kartoza/qgis_geonode/releases"
+    base_url = "https://api.github.com/repos/automining-br/QGISGeoNodePlugin/releases"
     response = httpx.get(base_url)
     result = []
     if response.status_code == 200:

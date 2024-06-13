@@ -86,9 +86,11 @@ class ConnectionSettings:
                 "base_url": self.base_url,
                 "page_size": self.page_size,
                 "auth_config": self.auth_config,
-                "geonode_version": str(self.geonode_version)
-                if self.geonode_version is not None
-                else None,
+                "geonode_version": (
+                    str(self.geonode_version)
+                    if self.geonode_version is not None
+                    else None
+                ),
                 "wfs_version": self.wfs_version.value,
             }
         )

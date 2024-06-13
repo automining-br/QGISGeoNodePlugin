@@ -404,7 +404,9 @@ class GeonodeApiClientVersion_3_4_0(GeonodeApiClientVersion_3_x):
             license=(raw_dataset.get("license") or {}).get("identifier", ""),
             constraints=raw_dataset.get("raw_constraints_other", ""),
             owner=raw_dataset.get("owner", {}).get("username", ""),
-            metadata_author=raw_dataset.get("metadata_author", {})[0].get("username", ""),
+            metadata_author=raw_dataset.get("metadata_author", {})[0].get(
+                "username", ""
+            ),
         )
         return models.Dataset(**properties)
 
