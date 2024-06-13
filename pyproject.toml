@@ -2,7 +2,7 @@
 name = "qgis_geonode"
 version = "1.0.4"
 description = "A QGIS plugin for integrating with modern GeoNode"
-authors = ["Kartoza <info@kartoza.com>", "GeoSolutions <info@geosolutionsgroup.com>"]
+authors = ["Kartoza <info@kartoza.com>", "Automining <contato@automining.com.br>"]
 license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
