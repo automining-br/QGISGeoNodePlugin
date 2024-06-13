@@ -3,6 +3,7 @@
 import dataclasses
 import datetime as dt
 import json
+import re
 import shutil
 import tempfile
 import typing
@@ -243,8 +244,9 @@ class GeonodeApiClientVersion_3_x(BaseGeonodeClient):
         sld_url = raw_style.get("sld_url")
         if auth_provider_name == "basic":
             try:
-                prefix, suffix = sld_url.partition("geoserver")[::2]
-                sld_url = f"{self.base_url}/gs{suffix}"
+                # prefix, suffix = sld_url.partition("geoserver")[::2]
+                suffix = re.findall("\/geoserver\/.*", sld_url)[0]
+                sld_url = f"{self.base_url}{suffix}"
                 log(f"sld_url: {sld_url}")
             except AttributeError:
                 pass
